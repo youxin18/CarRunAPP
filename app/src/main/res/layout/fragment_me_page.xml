@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MineActivity">
+    <include layout="@layout/head_mine"
+        android:id="@+id/head_mine"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head_mine"
+        android:background="#FAFAFA">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/circle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"/>
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sline"
+                android:layout_toRightOf="@+id/circle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-5dp"/>
+            <TextView
+                android:id="@+id/ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_toRightOf="@+id/circle"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="BczID:"/>
+            <ImageView
+                android:id="@+id/arrow_black"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/other"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"/>
+            <RelativeLayout
+                android:id="@+id/moudle2"
+                android:layout_below="@+id/circle"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:background="#F0F3FC">
+                <TextView
+                    android:id="@+id/study_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学习单词"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/weclome"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/study_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="坚持天数"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toRightOf="@+id/study_word"
+                    android:layout_marginLeft="70dp"/>
+                <ImageView
+                    android:id="@+id/weclome"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/weclome"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/moudle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moudle2"
+
+                android:background="@color/white"
+                android:layout_margin="20dp">
+                <ImageView
+                    android:id="@+id/computer"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/computer"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的课程"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/computer" />
+
+                <ImageView
+                    android:id="@+id/account"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/account"
+                    android:layout_below="@+id/computer"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的账户"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/account"
+                    android:layout_below="@id/computer"
+                    />
+                <ImageView
+                    android:id="@+id/word_number"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/word_number"
+                    android:layout_below="@+id/account"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="词汇量"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/word_number"
+                    android:layout_below="@id/account"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/moudle4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moudle3"
+
+                android:background="@color/white"
+                android:layout_margin="20dp">
+                <ImageView
+                    android:id="@+id/hide"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/hide"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的收藏"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/hide"
+                    />
+                <ImageView
+                    android:id="@+id/library"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/library"
+                    android:layout_below="@+id/hide"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的收藏"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/library"
+                    android:layout_below="@+id/hide" />
+                <ImageView
+                    android:id="@+id/coins"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/coins"
+                    android:layout_below="@+id/library"
+                    android:layout_margin="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的铜板"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/library"
+                    android:layout_below="@+id/library" />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/moudle5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moudle4"
+
+                android:background="@color/white"
+                android:layout_margin="20dp">
+                <ImageView
+                    android:id="@+id/shop"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/shop"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="官方商城"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/shop" />
+                <ImageView
+                    android:id="@+id/help"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/library"
+                    android:layout_below="@+id/shop"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帮助与反馈"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/help"
+                    android:layout_below="@+id/shop"
+                    />
+                <ImageView
+                    android:id="@+id/good"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/coins"
+                    android:layout_below="@+id/help"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="给我们好评"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/good"
+                    android:layout_below="@+id/help"
+                    />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FirstActivity"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    >
+    <RelativeLayout
+        android:id="@+id/card_list_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/left_arrow"
+            android:layout_centerVertical="true"
+           />
+     <TextView
+         android:id="@+id/word_number_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="单词列表"
+         android:layout_centerInParent="true"
+         android:textSize="18sp"
+         android:textColor="#000000" />
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+    </RelativeLayout>
+   <LinearLayout
+
+        android:id="@+id/card_list_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/card_list_top"
+        android:orientation="horizontal"
+        >
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_weight="1"
+           android:orientation="vertical">
+        <TextView
+            android:id="@+id/had_studied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已学单词"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#5E5B5B"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            />
+           <View
+               android:id="@+id/had_studied_view"
+               android:layout_width="match_parent"
+               android:layout_height="3dp"
+               android:background="#B8B3B3"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="10dp"
+
+               />
+       </LinearLayout>
+    <LinearLayout
+        android:id="@+id/no_study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:text="未学单词"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="#5E5B5B"
+            android:gravity="center"/>
+        <View
+            android:id="@+id/no_study_view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#B8B3B3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/had_cut_word"
+            android:layout_width="wrap_content"
+            android:text="已斩单词"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#5E5B5B"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <View
+            android:id="@+id/had_cut_word_view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#B8B3B3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/collect_word"
+            android:layout_width="wrap_content"
+            android:text="收藏单词"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#5E5B5B"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+        <View
+            android:id="@+id/collect_word_view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#B8B3B3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+
+            />
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

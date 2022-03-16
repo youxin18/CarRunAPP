@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_pink">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you ready?"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:textColor="#FBFBF9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/laugh_black"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/yes"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/yes_black"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/no"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_black"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="26dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/card_list_box"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E6E6E6"
+        android:layout_below="@+id/card_list_list">
+        <TextView
+            android:id="@+id/word_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单词数：163"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#8F8E8E"/>
+        <Button
+            android:id="@+id/card_list_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间倒序"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/card_list_edit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021年09月26日"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/card_list_box"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerView_has"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

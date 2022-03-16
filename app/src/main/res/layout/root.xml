@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center">
+        <RelativeLayout
+            android:id="@+id/word_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/word"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:src="@drawable/word"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/word"
+                android:text="单词"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/find_root"
+            android:layout_toRightOf="@+id/word_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/find"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:src="@drawable/find"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/find"
+                android:text="发现"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_root"
+            android:layout_toRightOf="@+id/find_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/me"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+
+                android:src="@drawable/me"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/me"
+                android:text="我的"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp" />
+
+        </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>
